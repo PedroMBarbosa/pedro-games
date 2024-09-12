@@ -50,7 +50,6 @@
 .link-jogos{
 	color: black;
 	text-decoration: none;
-    border-top: 1px dashed black;
 }
 .canvas-jogo{
 	margin-left: auto;
@@ -70,8 +69,7 @@
 .image{
 	width: 150px;
 	height: 150px;
-    border-bottom: 1px dashed black;
 }
 .nome-jogo{
-    border-top: 1px dashed black;
+    border-top: 2px dashed black;
 }
