@@ -17,7 +17,7 @@
 .titulo{
 	text-align: center;
 }
-.container{
+.container-conteudo{
 	border: 2px solid black;
 	background: #008AFF;
 	display: flex;
