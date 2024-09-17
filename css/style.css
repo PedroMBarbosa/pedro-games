@@ -14,8 +14,16 @@
 	transform: scale(1.2);
 	background: #7200FF;
 }
+.div-logo{
+	margin-top: -120px;
+}
+.logo{
+	width: 140px;
+	height: 150px;
+}
 .titulo{
 	text-align: center;
+	font-size: 50px;
 }
 .container{
 	border: 2px solid black;
