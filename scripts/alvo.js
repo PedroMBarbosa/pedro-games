@@ -19,6 +19,10 @@ const tiro_inicial = 15;
 let pontuacao = 0;
 let balas = [];
 
+// Variáveis de movimento do alvo
+let alvo_velX = 2;  // Velocidade horizontal inicial do alvo
+let alvo_velY = 2;  // Velocidade vertical inicial do alvo
+
 // Cria a tela (canvas)
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
@@ -27,10 +31,32 @@ const ctx = canvas.getContext('2d');
 let alvo_x = Math.random() * (LARGURA_TELA - TAMANHO_ALVO);
 let alvo_y = Math.random() * (ALTURA_TELA - TAMANHO_ALVO);
 
+// Função para calcular a velocidade baseada nos tiros restantes
+function calcularVelocidade() {
+    const velocidadeBase = 2;
+    const fatorAumento = (tiro_inicial - tiros) * 0.2;  // Aumenta 0.2 de velocidade a cada tiro
+    return velocidadeBase + fatorAumento;
+}
+
 // Função para desenhar o alvo
 function desenharAlvo() {
     ctx.fillStyle = VERMELHO;
     ctx.fillRect(alvo_x, alvo_y, TAMANHO_ALVO, TAMANHO_ALVO);
+}
+
+// Função para atualizar a posição do alvo (movimento)
+function moverAlvo() {
+    const velocidadeAtual = calcularVelocidade();  // Calcula a nova velocidade
+    alvo_x += alvo_velX * velocidadeAtual;
+    alvo_y += alvo_velY * velocidadeAtual;
+
+    // Verifica colisão com as bordas da tela e inverte a direção
+    if (alvo_x <= 0 || alvo_x + TAMANHO_ALVO >= LARGURA_TELA) {
+        alvo_velX *= -1;  // Inverte a direção horizontal
+    }
+    if (alvo_y <= 0 || alvo_y + TAMANHO_ALVO >= ALTURA_TELA) {
+        alvo_velY *= -1;  // Inverte a direção vertical
+    }
 }
 
 // Função para desenhar a arma
@@ -92,9 +118,11 @@ function atualizarBalas() {
         if (bala.x < alvo_x + TAMANHO_ALVO && bala.x + bala.tamanho > alvo_x &&
             bala.y < alvo_y + TAMANHO_ALVO && bala.y + bala.tamanho > alvo_y) {
             pontuacao++;
-            // Reposiciona o alvo
+            // Reposiciona o alvo e muda a direção
             alvo_x = Math.random() * (LARGURA_TELA - TAMANHO_ALVO);
             alvo_y = Math.random() * (ALTURA_TELA - TAMANHO_ALVO);
+            alvo_velX = (Math.random() - 0.5) * 4;  // Nova direção horizontal
+            alvo_velY = (Math.random() - 0.5) * 4;  // Nova direção vertical
             return false;
         }
 
@@ -121,6 +149,7 @@ function gameLoop() {
     ctx.fillStyle = PRETO;
     ctx.fillRect(0, 0, LARGURA_TELA, ALTURA_TELA);
 
+    moverAlvo();  // Atualiza o movimento do alvo
     desenharAlvo();
     desenharArma();
     desenharBalas();
