@@ -151,6 +151,7 @@ const BRANCO = "#FFFFFF";
             alvo_y = Math.random() * (ALTURA_TELA - TAMANHO_ALVO);
             alvo_velX = 2;
             alvo_velY = 2;
+            gameLoop();
         }
 
         // Event listener para o botão de reiniciar
