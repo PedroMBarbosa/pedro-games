@@ -408,6 +408,10 @@ window.addEventListener('click', function() {
     telaAtiva.click();
   }
 });
-
+window.addEventListener('keydown', function(event) {
+  if(event.code='Space') {
+    telaAtiva.click();
+  }
+});
 mudaParaTela(Telas.INICIO);
 loop();
