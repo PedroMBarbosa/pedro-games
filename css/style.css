@@ -76,12 +76,21 @@
 	width: 190px;
 	height: 190px;
 }
+.div-jogo:hover .image{
+	width: 190px;
+	height: 190px;
+}
+.div-jogo:hover .nome-jogo{
+	opacity: 0;
+}
 .image{
 	width: 150px;
 	height: 150px;
+	transition: transfom 0.3s ease;
 }
 .nome-jogo{
     border-top: 2px dashed black;
+    transition: opacity 0.0s ease;
 }
 #resetButton{
 	width: 10%;
