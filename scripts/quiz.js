@@ -7,7 +7,7 @@ function iniciarQuiz() {
   numero2 = Math.floor(Math.random() * 100) + 1;
 
   // Lista de operações
-  operacao = ["+", "-", "/", "*"];
+  operacao = ["+", "-", "/", "X"];
 
   // Seleciona uma operação aleatória
   selecionaop = Math.floor(Math.random() * 4);
