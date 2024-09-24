@@ -8,18 +8,39 @@
 </head>
 <body class="fundo">
 	<div class="cabecario">
-		<h1 class="titulo">Quiz Supremo</h1>
+		<h1 class="titulo">Quiz Matemático Supremo</h1>
 	</div>
 
 	<div class="container">
+		<div class="quiz">
+
+			<div id="num1"><input type="text" id="intext1" readonly></div>
+
+			<div class="operacao">
+				<h1 id="operacoes"></h1>
+			</div>
+			<div id="num2"><input type="text" id="intext2" readonly></div>
+			<div>
+				<h1 id="igual">=</h1>
+			</div>
+			<div class="resposta">
+				<input type="text" id="intext" class="intext11">
+			</div>
+			<div class="mostra">
+				<span id="respostas"></span>
+			</div>
+			<div>
+				<button id="botaoresposta" onclick="verificaresposta()">Responder</button>
+				<button id="botaoreinicia" onclick="reiniciarQuiz()">Reiniciar</button>
+			</div>
+		</div>
 		<script type="text/javascript" src="../scripts/quiz.js"></script>
 	</div>
 
 	<div class="volta">
 		<a href="../index.html" class="link-volta">
-			<p>Volta</p>
+			<p>Voltar</p>
 		</a>
 	</div>
-
 </body>
 </html>

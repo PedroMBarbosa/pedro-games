@@ -217,3 +217,58 @@
 #alternativa{
 	background-color: #239EFD;
 }
+#intext1{
+	margin-left: 70px;
+	margin-right: 100px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	text-align: center;
+}
+#intext2{
+	margin-left: 100px;
+	margin-right: 70px;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	text-align: center;
+}
+#operacoes{
+	font-size: 80px;
+}
+.quiz{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.mostra{
+	display: flex;
+}
+.intext11{
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	text-align: center;
+	margin-left: 100px;
+}
+#igual{
+	font-size: 80px;
+}
+#botaoresposta{
+	width: 200px;
+	height: 70px;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 40px;
+}
+#respostas{
+	font-size: 40px;
+}
+#botaoreinicia{
+	width: 200px;
+	height: 70px;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 40px;
+}

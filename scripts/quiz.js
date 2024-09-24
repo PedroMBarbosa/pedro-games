@@ -1,65 +1,54 @@
-const question = document.querySelector(".question");
-const answers = document.querySelector(".answers");
-const spnQtd = document.querySelector(".spnQtd");
-const textFinish = document.querySelector(".finish span");
-const content = document.querySelector(".content");
-const contentFinish = document.querySelector(".finish");
-const btnRestart = document.querySelector(".finish button");
+let numero1, numero2, resultado, operacao, selecionaop;
 
-import questions from "./questions.js";
+// Função para iniciar o quiz ou reiniciá-lo
+function iniciarQuiz() {
+  // Gera dois números aleatórios entre 1 e 6
+  numero1 = Math.floor(Math.random() * 6) + 1;
+  numero2 = Math.floor(Math.random() * 6) + 1;
 
-let currentIndex = 0;
-let questionsCorrect = 0;
+  // Lista de operações
+  operacao = ["+", "-", "/", "*"];
 
-btnRestart.onclick = () => {
-  content.style.display = "flex";
-  contentFinish.style.display = "none";
+  // Seleciona uma operação aleatória
+  selecionaop = Math.floor(Math.random() * 4);
 
-  currentIndex = 0;
-  questionsCorrect = 0;
-  loadQuestion();
-};
+  // Exibe os números e a operação
+  document.getElementById('intext1').value = numero1;
+  document.getElementById('intext2').value = numero2;
+  document.getElementById('operacoes').innerText = operacao[selecionaop];
 
-function nextQuestion(e) {
-  if (e.target.getAttribute("data-correct") === "true") {
-    questionsCorrect++;
+  // Calcula o resultado com base na operação selecionada
+  if (selecionaop === 0) {  
+    resultado = numero1 + numero2;
+  } else if (selecionaop === 1) {
+    resultado = numero1 - numero2;
+  } else if (selecionaop === 2) {
+    resultado = numero1 / numero2;
+  } else if (selecionaop === 3) {
+    resultado = numero1 * numero2;
   }
 
-  if (currentIndex < questions.length - 1) {
-    currentIndex++;
-    loadQuestion();
+  // Limpa o campo de resposta e a mensagem anterior
+  document.getElementById('intext').value = '';
+  document.getElementById('respostas').innerText = '';
+}
+
+// Função para verificar a resposta do usuário
+function verificaresposta() {
+  let respostaUsuario = document.getElementById('intext').value;
+
+  // Compara a resposta do usuário com o resultado
+  if (Number(respostaUsuario) === resultado) {
+    document.getElementById('respostas').innerText = "Correto!";
   } else {
-    finish();
+    document.getElementById('respostas').innerText = "Incorreto. A resposta correta é: " + resultado;
   }
 }
 
-function finish() {
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
-  content.style.display = "none";
-  contentFinish.style.display = "flex";
+// Função para reiniciar o quiz
+function reiniciarQuiz() {
+  iniciarQuiz(); // Chama a função para iniciar um novo quiz
 }
 
-function loadQuestion() {
-  spnQtd.innerHTML = `${currentIndex + 1}/${questions.length}`;
-  const item = questions[currentIndex];
-  answers.innerHTML = "";
-  question.innerHTML = item.question;
-
-  item.answers.forEach((answer) => {
-    const div = document.createElement("div");
-
-    div.innerHTML = `
-    <button class="answer" data-correct="${answer.correct}">
-      ${answer.option}
-    </button>
-    `;
-
-    answers.appendChild(div);
-  });
-
-  document.querySelectorAll(".answer").forEach((item) => {
-    item.addEventListener("click", nextQuestion);
-  });
-}
-
-loadQuestion();
+// Inicia o quiz automaticamente ao carregar a página
+iniciarQuiz();
