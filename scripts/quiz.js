@@ -3,8 +3,8 @@ let numero1, numero2, resultado, operacao, selecionaop;
 // Função para iniciar o quiz ou reiniciá-lo
 function iniciarQuiz() {
   // Gera dois números aleatórios entre 1 e 6
-  numero1 = Math.floor(Math.random() * 6) + 1;
-  numero2 = Math.floor(Math.random() * 6) + 1;
+  numero1 = Math.floor(Math.random() * 100) + 1;
+  numero2 = Math.floor(Math.random() * 100) + 1;
 
   // Lista de operações
   operacao = ["+", "-", "/", "*"];
