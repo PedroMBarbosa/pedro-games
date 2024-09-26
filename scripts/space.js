@@ -141,7 +141,7 @@ function invaderShoot() {
 
 // Função para desenhar as balas
 function drawBullets() {
-  ctx.fillStyle = 'red';
+  ctx.fillStyle = 'blue';
   bullets.forEach(bullet => {
     ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
   });
@@ -149,7 +149,7 @@ function drawBullets() {
 
 // Função para desenhar as balas dos invasores
 function drawInvaderBullets() {
-  ctx.fillStyle = 'yellow';
+  ctx.fillStyle = 'red';
   invaderBullets.forEach(bullet => {
     ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
   });
