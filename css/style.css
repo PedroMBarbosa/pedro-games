@@ -1,58 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 .fundo{
-	background: #0024FF;
+	background-image: linear-gradient(to right, #0000A2, #00A8FF, #0000A2);
 }
 .cabecario{
-	border: 2px solid black;
-	background: #008AFF;
+	border: 2px solid #ceecef;
+	background: #030d4f;
 	overflow: hidden;
 	transition: 2.1s;
-	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
 }
 .cabecario:hover{
-	background: #7200FF;
+	background: #ceecef;
+	border: 2px solid #030d4f;
 }
-.div-logo{
-	margin-top: -120px;
+.cabecario:hover .titulo{
+	color: #030d4f;
 }
 .logo{
 	width: 150px;
 	height: 150px;
 }
 .titulo{
-	text-align: center;
+	margin-top: 50px;
 	font-size: 50px;
+	color: #ceecef;
+	overflow: hidden;
+	transition: 2.1s;
 }
 .container{
-	border: 2px solid black;
-	background: #008AFF;
+	border: 2px solid #ceecef;
+	background: #030d4f;
 	display: flex;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 	flex-wrap: wrap;
+	border-radius: 20px 0px 20px 0px;
 }
 .volta{
-	border: 2px solid black;
+	border: 2px solid #ceecef;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50px;
+	width: 100px;
 	height: 40px;
 	justify-content: center;
-	background: #008AFF;
+	background: #030d4f;
 	margin-top: 10px;
 	overflow: hidden;
 	transition: 2.1s;
 }
 .volta:hover{
-	transform: scale(1.2);
-	background: #7200FF;
+	background: #ceecef;
+	border: 2px solid #030d4f;
+}
+.volta:hover .link-volta{
+	color:#030d4f;
 }
 .link-volta{
+	font-size: 40px;
 	text-align: center;
-	color: black;
+	color:#ceecef;
 	text-decoration: none;
 }
 .link-jogos{
@@ -64,35 +77,27 @@
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-    border: 2px solid black;
+  border: 2px solid black;
 }
 .div-jogo{
-	margin-left: 45px;
+	margin-left: 60px;
 	margin-top: 10px;
-	border: 2px solid black;
 	text-align: center;
 	margin-bottom: 10px;
-	width: 190px;
-	height: 190px;
-}
-.div-jogo:hover .image{
-	width: 190px;
-	height: 190px;
-	overflow: hidden;
-	transition: 2.1s;
-}
-.div-jogo:hover .nome-jogo{
-	opacity: 0;
+	width: 170px;
+	height: 170px;
+	border-radius: 20px;
 }
 .image{
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
 	transition: 0.3s;
+	border-radius: 20px;
 }
 .nome-jogo{
-    border-top: 2px dashed black;
-    transition: opacity 0.0s ease;
+	margin-top: -2px;
+  color: #ceecef;
 }
 #resetButton{
 	width: 10%;
@@ -273,4 +278,13 @@
 }
 #Space{
 	background-color: #000000;
+}
+.subtitulo{
+	color:#ceecef;
+}
+.color{
+	color:#ceecef;
+}
+.currentPlayer{
+	color:#ceecef;
 }
