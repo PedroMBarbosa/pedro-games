@@ -70,7 +70,7 @@ function movePaddles() {
         if (player2.y + player2.height > canvas.height) player2.y = canvas.height - player2.height;
     } else {
         // IA mais lenta para facilitar
-        const aiSpeed = paddleSpeed * 0.6; // IA 40% mais lenta
+        const aiSpeed = paddleSpeed * 0.3; // IA 40% mais lenta
         if (ball.y < player2.y + player2.height / 2) {
             player2.dy = -aiSpeed;
         } else {
