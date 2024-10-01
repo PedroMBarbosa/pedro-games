@@ -63,17 +63,18 @@ function movePaddles() {
     if (player1.y < 0) player1.y = 0;
     if (player1.y + player1.height > canvas.height) player1.y = canvas.height - player1.height;
 
-    // Controle do Jogador 2
+    // Controle do Jogador 2 (IA mais lenta no modo 1P)
     if (gameMode === "2P") {
         player2.y += player2.dy;
         if (player2.y < 0) player2.y = 0;
         if (player2.y + player2.height > canvas.height) player2.y = canvas.height - player2.height;
     } else {
-        // AI simples para o modo 1P (movimenta-se na direção da bola)
+        // IA mais lenta para facilitar
+        const aiSpeed = paddleSpeed * 0.6; // IA 40% mais lenta
         if (ball.y < player2.y + player2.height / 2) {
-            player2.dy = -paddleSpeed;
+            player2.dy = -aiSpeed;
         } else {
-            player2.dy = paddleSpeed;
+            player2.dy = aiSpeed;
         }
         player2.y += player2.dy;
     }
