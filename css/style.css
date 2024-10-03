@@ -35,13 +35,15 @@
 .container{
 	border: 2px solid #ceecef;
 	background: #030d4f;
-	display: flex;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
-	flex-wrap: wrap;
 	border-radius: 20px 0px 20px 0px;
+	display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 10px; 
+  padding: 10px;
 }
 .volta{
 	border: 2px solid #ceecef;
@@ -80,7 +82,7 @@
   border: 2px solid black;
 }
 .div-jogo{
-	margin-left: 60px;
+	margin-left: 40px;
 	margin-top: 10px;
 	text-align: center;
 	margin-bottom: 10px;
