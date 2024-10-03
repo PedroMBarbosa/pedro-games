@@ -102,9 +102,10 @@
   color: #ceecef;
 }
 #resetButton{
-	width: 10%;
-	height: 10%;
-	background-color: #008AFF;
+	width: 100px;
+	height: 30px;
+	background-color: #ceecef;
+	color: #030d4f;
 }
 
 .heading {
@@ -124,7 +125,7 @@
 .card {
   height: 110px;
   width: 100px;
-  background-color: #ffff00;
+  background-color: #ceecef;
   border-radius: 10px;
   display: grid;
   place-items: center;
@@ -210,73 +211,70 @@
   margin: 5px;
   cursor: pointer;
   font-size: 50px;
-  background: #f7f7f7;
+  background: #ceecef;
 }
 .currentPlayer{
 	margin-left: 425px;
 }
-.questao{
-	margin: 0 auto;
-	border: 2px solid black;
-	background-color: #84B3F4;
+.quiz {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
-#alternativa{
-	background-color: #239EFD;
+
+#intext1, #intext2, .intext11 {
+    width: 80px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
 }
-#intext1{
-	margin-left: 70px;
-	margin-right: 100px;
-	width: 100px;
-	height: 100px;
-	font-size: 40px;
-	text-align: center;
+
+.color {
+    font-size: 2em;
+    color: #333;
 }
-#intext2{
-	margin-left: 100px;
-	margin-right: 70px;
-	width: 100px;
-	height: 100px;
-	font-size: 40px;
-	text-align: center;
-}
-#operacoes{
-	font-size: 80px;
-}
-.quiz{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-.mostra{
-	display: flex;
-}
-.intext11{
-	width: 100px;
-	height: 100px;
-	font-size: 40px;
-	text-align: center;
-	margin-left: 100px;
+
+.resposta input {
+    width: 120px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 #igual{
-	font-size: 80px;
+	font-size: 2em;
 }
 #botaoresposta{
 	width: 200px;
-	height: 70px;
-	font-size: 30px;
+	height: 40px;
+	font-size: 20px;
 	text-align: center;
 	margin-left: 40px;
+	background-color:#ceecef;
+	color:#030d4f;
 }
 #respostas{
 	font-size: 40px;
 }
 #botaoreinicia{
 	width: 200px;
-	height: 70px;
-	font-size: 30px;
+	height: 40px;
+	font-size: 20px;
 	text-align: center;
 	margin-left: 40px;
+	background-color:#ceecef;
+	color:#030d4f;
+}
+.mostra{
+	color:#ceecef;
 }
 #Space{
 	background-color: #000000;
@@ -289,4 +287,58 @@
 }
 .currentPlayer{
 	color:#ceecef;
+}
+.game-container {
+  width: 100%;
+  max-width: 480px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.game-container > .players-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.game-container > .players-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.game-container > .players-container > .player {
+  transform: rotatey(180deg);
+}
+
+.game-container > .players-container .option {
+  width: 100%;
+  max-width: 150px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.game-container > .players-container > .player > .option {
+  cursor: pointer;
+}
+
+.game-container > .players-container > .player > .option:hover {
+  opacity: 1;
+}
+
+.game-container > .players-container .option > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.game-container > .result-container {
+  padding: 16px;
+  text-align: center;
+  font-size: 22px;
+  color: rgba(60, 60, 60, 1);
+}
+#reiniciarBtn{
+	width: 100px;
+	height: 30px;
+	background-color: #ceecef;
+	color: #030d4f;
 }
