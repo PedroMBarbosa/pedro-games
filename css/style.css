@@ -201,7 +201,7 @@
 .game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-left: auto;
+  margin-left: 200px;
   margin-right: auto;
 }
 
@@ -214,7 +214,6 @@
   background: #ceecef;
 }
 .currentPlayer{
-	margin-left: 425px;
 }
 .quiz {
     display: grid;
