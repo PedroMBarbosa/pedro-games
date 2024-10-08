@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 700
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 .fundo{
@@ -27,11 +39,12 @@
 	height: 150px;
 }
 .titulo{
-	margin-top: 50px;
+	margin-top: 40px;
 	font-size: 50px;
 	color: #ceecef;
 	overflow: hidden;
 	transition: 2.1s;
+	font-family: "Oswald";
 }
 .container{
 	border: 2px solid #ceecef;
@@ -57,6 +70,7 @@
 	margin-top: 10px;
 	overflow: hidden;
 	transition: 2.1s;
+	font-family: "Oswald";
 }
 .volta:hover{
 	background: #ceecef;
@@ -96,17 +110,28 @@
 	height: 150px;
 	overflow: hidden;
 	transition: 0.3s;
-	border-radius: 20px;
+	border-radius: 200px;
+	opacity: 0.5;
 }
+.image:hover{
+	border-radius: 20px;
+	opacity: 1;
+	scale: 1.2;
+	margin-bottom: 22px;
+	box-shadow: 7px 7px 7px 0px #00AEFF;
+}
+
 .nome-jogo{
 	margin-top: -2px;
   color: #ceecef;
+  font-family: "Oswald";
 }
 #resetButton{
 	width: 100px;
 	height: 30px;
 	background-color: #ceecef;
 	color: #030d4f;
+	font-family: "Oswald";
 }
 
 .heading {
@@ -213,8 +238,10 @@
   cursor: pointer;
   font-size: 50px;
   background: #ceecef;
+  font-family: "Oswald";
 }
 .currentPlayer{
+	font-family: "Oswald";
 }
 .quiz {
     display: grid;
@@ -234,6 +261,7 @@
     border-radius: 5px;
     background-color: #f9f9f9;
     color: #333;
+    font-family: "Oswald";
 }
 
 .color {
@@ -248,9 +276,11 @@
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 5px;
+    font-family: "Oswald";
 }
 #igual{
 	font-size: 2em;
+	font-family: "Oswald";
 }
 #botaoresposta{
 	width: 200px;
@@ -260,9 +290,11 @@
 	margin-left: 40px;
 	background-color:#ceecef;
 	color:#030d4f;
+	font-family: "Oswald";
 }
 #respostas{
 	font-size: 40px;
+	font-family: "Oswald";
 }
 #botaoreinicia{
 	width: 200px;
@@ -272,15 +304,18 @@
 	margin-left: 40px;
 	background-color:#ceecef;
 	color:#030d4f;
+	font-family: "Oswald";
 }
 .mostra{
 	color:#ceecef;
+	font-family: "Oswald";
 }
 #Space{
 	background-color: #000000;
 }
 .subtitulo{
 	color:#ceecef;
+	font-family: "Oswald";
 }
 .color{
 	color:#ceecef;
@@ -341,6 +376,7 @@
 	height: 30px;
 	background-color: #ceecef;
 	color: #030d4f;
+	font-family: "Oswald";
 }
 
 #game-dino{
