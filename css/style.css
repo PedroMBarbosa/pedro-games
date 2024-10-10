@@ -58,13 +58,14 @@
   grid-template-columns: repeat(4, 1fr); 
   grid-gap: 10px; 
   padding: 10px;
+  height: 110%;
 }
 .volta{
 	border: 2px solid #ceecef;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100px;
-	height: 40px;
+	height: 50px;
 	justify-content: center;
 	background: #030d4f;
 	margin-top: 10px;
@@ -381,4 +382,32 @@
 
 #game-dino{
 	border: 2px solid #ceecef;
+}
+
+.rodape{
+	border: 2px solid #ceecef;
+	background: #030d4f;
+	overflow: hidden;
+	transition: 2.1s;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.rodape:hover{
+	background: #ceecef;
+	border: 2px solid #030d4f;
+}
+
+.rodape:hover .nome{
+	color: #030d4f;
+}
+
+.nome{
+	font-family: "Oswald";
+	font-size: 50px;
+	margin-bottom: 5px;
+	color: #ceecef;
 }
