@@ -13,7 +13,7 @@ document.getElementById("botao-cor").addEventListener("click", function() {
 
     //Alterna o nome no rodapé
     document.getElementById("nome").classList.toggle("nome2")
-
+    document.getElementById("rodape").classList.toggle("rodape2")
     // Lista de IDs dos jogos
     const jogos = [
         "cobrinha", "alvo", "pong", "flybird",

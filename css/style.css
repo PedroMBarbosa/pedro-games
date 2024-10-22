@@ -16,12 +16,12 @@
 }
 
 .fundo{
-	background-image: linear-gradient(to right, #0000A2, #00A8FF, #0000A2);
+	background-color: #0c5149;
 	transition: 0.6s;
 }
 .cabecario{
-	border: 2px solid #ceecef;
-	background-color: #030d4f;
+	border: 2px solid #030d4f;
+	background-color: #09c184;
 	overflow: hidden;
 	transition: 0.6s;
 	margin-left: auto;
@@ -30,20 +30,21 @@
 }
 
 .logo{
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 }
 .titulo{
-	margin-top: 40px;
-	font-size: 50px;
-	color: #ceecef;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 40px;
+	color: #0d192b;
 	overflow: hidden;
 	transition: 0.6s;
 	font-family: "Oswald";
 }
 .container{
-	border: 2px solid #ceecef;
-	background: #030d4f;
+	border: 2px solid #030d4f;
+	background-color: #09c184;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -51,36 +52,29 @@
 	border-radius: 20px 0px 20px 0px;
 	display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  grid-gap: 10px; 
-  padding: 10px;
-  height: 110%;
+  grid-gap: 5px; 
+  padding: 5px;
   overflow: hidden;
 	transition: 0.6s;
 }
 .volta{
-	border: 2px solid #ceecef;
+	border: 2px solid #030d4f;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100px;
 	height: 50px;
 	justify-content: center;
-	background: #030d4f;
+	background-color: #09c184;
 	margin-top: 10px;
 	overflow: hidden;
 	transition: 0.6s;
 	font-family: "Oswald";
 }
-.volta:hover{
-	background: #ceecef;
-	border: 2px solid #030d4f;
-}
-.volta:hover .link-volta{
-	color:#030d4f;
-}
+
 .link-volta{
 	font-size: 40px;
 	text-align: center;
-	color:#ceecef;
+	color:#0d192b;
 	text-decoration: none;
 }
 .link-jogos{
@@ -88,10 +82,6 @@
 	text-decoration: none;
 }
 .canvas-jogo{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
   border: 2px solid black;
 }
 .div-jogo{
@@ -104,24 +94,24 @@
 	border-radius: 20px;
 }
 .image{
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
 	overflow: hidden;
 	transition: 0.3s;
 	border-radius: 200px;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 .image:hover{
 	border-radius: 20px;
 	opacity: 1;
 	scale: 1.2;
 	margin-bottom: 22px;
-	box-shadow: 7px 7px 7px 0px #00AEFF;
+	box-shadow: 7px 7px 7px 0px #0c5149;
 }
 
 .nome-jogo{
 	margin-top: -2px;
-  color: #ceecef;
+  color: #0d192b;
   font-family: "Oswald";
   overflow: hidden;
 	transition: 0.6s;
@@ -130,7 +120,7 @@
 	width: 100px;
 	height: 30px;
 	background-color: #ceecef;
-	color: #030d4f;
+	color: #0d192b;
 	font-family: "Oswald";
 }
 
@@ -142,7 +132,6 @@
 }
 
 .cards {
-	margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2em;
@@ -157,6 +146,8 @@
   place-items: center;
   cursor: pointer;
   transition: 0.3s all ease;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card:hover {
@@ -260,13 +251,13 @@
     border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
-    color: #333;
+    color: #0d192b;
     font-family: "Oswald";
 }
 
 .color {
-    font-size: 2em;
-    color: #333;
+  font-size: 2em;
+  color: #0d192b;
 }
 
 .resposta input {
@@ -289,7 +280,7 @@
 	text-align: center;
 	margin-left: 40px;
 	background-color:#ceecef;
-	color:#030d4f;
+	color:#0d192b;
 	font-family: "Oswald";
 }
 #respostas{
@@ -303,31 +294,33 @@
 	text-align: center;
 	margin-left: 40px;
 	background-color:#ceecef;
-	color:#030d4f;
+	color:#0d192b;
 	font-family: "Oswald";
 }
 .mostra{
-	color:#ceecef;
+	color:#0d192b;
 	font-family: "Oswald";
 }
 #Space{
 	background-color: #000000;
 }
 .subtitulo{
-	color:#ceecef;
+	color:#0d192b;
 	font-family: "Oswald";
 }
 .color{
-	color:#ceecef;
+	color:#0d192b;
 }
 .currentPlayer{
-	color:#ceecef;
+	color:#0d192b;
 }
 .game-container {
   width: 100%;
   max-width: 480px;
   display: grid;
   grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .game-container > .players-container {
@@ -375,8 +368,9 @@
 	width: 100px;
 	height: 30px;
 	background-color: #ceecef;
-	color: #030d4f;
+	color: #0d192b;
 	font-family: "Oswald";
+	margin-bottom: 10px;
 }
 
 #game-dino{
@@ -386,13 +380,15 @@
 .rodape{
 	text-align: center;
 	margin-top: 25px;
+	background-color: #09c184;
+	border: 2px solid #030d4f;
 }
 
 .nome{
 	font-family: "Oswald";
-	font-size: 50px;
+	font-size: 30px;
 	margin-bottom: 5px;
-	color: #ceecef;
+	color: #0d192b;
 }
 
 .muda-cor{
@@ -400,36 +396,54 @@
 	height: 50px;
 	width: 70px;
 	margin-bottom: auto;
-	margin-right: auto;
-	margin-left: 650px;
-}
-.fundo2{
-	background-image: linear-gradient(to right, #00A8FF, #0000A2, #00A8FF);
-	transition: 0.6s;
+	margin-left: auto;
+	margin-right: 20px;
+	font-family: "Oswald";
 }
 
-.cabecario2{
+.container-jogo{
 	border: 2px solid #030d4f;
-	background-color: #ceecef;
+	background-color: #09c184;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-radius: 20px 0px 20px 0px;
+  overflow: hidden;
+	transition: 0.6s;
+	text-align: center;
+}
+
+.fundo2{
+	background-color: #0c5149;
+	transition: 0.6s;
+}
+.cabecario2{
+	border: 2px solid #ceecef;
+	background-color: #0d192b;
 	overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 }
 
+.logo2{
+	width: 130px;
+	height: 130px;
+}
 .titulo2{
-	margin-top: 40px;
-	font-size: 50px;
-	color: #030d4f;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 40px;
+	color: #09c184;
 	overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
 	font-family: "Oswald";
 }
-
 .container2{
-	border: 2px solid #030d4f;
-	background: #ceecef;
+	border: 2px solid #ceecef;
+	background-color: #0d192b;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
@@ -437,24 +451,30 @@
 	border-radius: 20px 0px 20px 0px;
 	display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  grid-gap: 10px; 
-  padding: 10px;
-  height: 110%;
+  grid-gap: 5px; 
+  padding: 5px;
   overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
 }
 
 .nome-jogo2{
 	margin-top: -2px;
-  color: #030d4f;
+  color: #09c184;
   font-family: "Oswald";
   overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
+}
+
+.rodape2{
+	text-align: center;
+	margin-top: 25px;
+	background-color: #0d192b;
+	border: 2px solid #ceecef;
 }
 
 .nome2{
 	font-family: "Oswald";
-	font-size: 50px;
+	font-size: 30px;
 	margin-bottom: 5px;
-	color: #030d4f;
+	color: #09c184;
 }
