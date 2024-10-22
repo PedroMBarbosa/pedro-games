@@ -17,23 +17,18 @@
 
 .fundo{
 	background-image: linear-gradient(to right, #0000A2, #00A8FF, #0000A2);
+	transition: 0.6s;
 }
 .cabecario{
 	border: 2px solid #ceecef;
-	background: #030d4f;
+	background-color: #030d4f;
 	overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 }
-.cabecario:hover{
-	background: #ceecef;
-	border: 2px solid #030d4f;
-}
-.cabecario:hover .titulo{
-	color: #030d4f;
-}
+
 .logo{
 	width: 150px;
 	height: 150px;
@@ -43,7 +38,7 @@
 	font-size: 50px;
 	color: #ceecef;
 	overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
 	font-family: "Oswald";
 }
 .container{
@@ -59,6 +54,8 @@
   grid-gap: 10px; 
   padding: 10px;
   height: 110%;
+  overflow: hidden;
+	transition: 0.6s;
 }
 .volta{
 	border: 2px solid #ceecef;
@@ -70,7 +67,7 @@
 	background: #030d4f;
 	margin-top: 10px;
 	overflow: hidden;
-	transition: 2.1s;
+	transition: 0.6s;
 	font-family: "Oswald";
 }
 .volta:hover{
@@ -126,6 +123,8 @@
 	margin-top: -2px;
   color: #ceecef;
   font-family: "Oswald";
+  overflow: hidden;
+	transition: 0.6s;
 }
 #resetButton{
 	width: 100px;
@@ -385,24 +384,8 @@
 }
 
 .rodape{
-	border: 2px solid #ceecef;
-	background: #030d4f;
-	overflow: hidden;
-	transition: 2.1s;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
-	justify-content: center;
-	margin-top: 10px;
-}
-
-.rodape:hover{
-	background: #ceecef;
-	border: 2px solid #030d4f;
-}
-
-.rodape:hover .nome{
-	color: #030d4f;
+	margin-top: 25px;
 }
 
 .nome{
@@ -410,4 +393,68 @@
 	font-size: 50px;
 	margin-bottom: 5px;
 	color: #ceecef;
+}
+
+.muda-cor{
+	margin-top: auto;
+	height: 50px;
+	width: 70px;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: 650px;
+}
+.fundo2{
+	background-image: linear-gradient(to right, #00A8FF, #0000A2, #00A8FF);
+	transition: 0.6s;
+}
+
+.cabecario2{
+	border: 2px solid #030d4f;
+	background-color: #ceecef;
+	overflow: hidden;
+	transition: 2.1s;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+.titulo2{
+	margin-top: 40px;
+	font-size: 50px;
+	color: #030d4f;
+	overflow: hidden;
+	transition: 2.1s;
+	font-family: "Oswald";
+}
+
+.container2{
+	border: 2px solid #030d4f;
+	background: #ceecef;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-radius: 20px 0px 20px 0px;
+	display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 10px; 
+  padding: 10px;
+  height: 110%;
+  overflow: hidden;
+	transition: 2.1s;
+}
+
+.nome-jogo2{
+	margin-top: -2px;
+  color: #030d4f;
+  font-family: "Oswald";
+  overflow: hidden;
+	transition: 2.1s;
+}
+
+.nome2{
+	font-family: "Oswald";
+	font-size: 50px;
+	margin-bottom: 5px;
+	color: #030d4f;
 }
