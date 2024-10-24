@@ -6,7 +6,7 @@ const alturaJanela = 600;
 const BRANCO = "#FFFFFF";
 const PRETO = "#000000";
 const AZUL = "#0000FF";
-const AMARELO = "#FFFF00";
+const VERMELHO = "#FF0000";
 
 // Configurações iniciais
 let pontuacao = 0;
@@ -98,7 +98,7 @@ function sortearPosicaoComida() {
 }
 
 function desenharComida() {
-    ctx.fillStyle = AMARELO;
+    ctx.fillStyle = VERMELHO;
     ctx.beginPath();
     ctx.ellipse(xComida + 12.5, yComida + 12.5, 12.5, 12.5, 0, 0, Math.PI * 2);
     ctx.fill();
