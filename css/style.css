@@ -399,6 +399,9 @@
 	margin-left: auto;
 	margin-right: 20px;
 	font-family: "Oswald";
+	border-radius: 10px;
+	background-color: #0c5149;
+	color: #89C689;
 }
 
 .container-jogo{
@@ -477,4 +480,49 @@
 	font-size: 30px;
 	margin-bottom: 5px;
 	color: #09c184;
+}
+
+.container-jogo2{
+	border: 2px solid #09c184;
+	background-color: #030d4f;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-radius: 20px 0px 20px 0px;
+  overflow: hidden;
+	transition: 0.6s;
+	text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #030d4f;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#question{
+	font-family: "Oswald";
+	color: #0d192b;
+}
+
+.trofeu{
+	height: 300px;
+	width: 200px;
 }

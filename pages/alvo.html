@@ -8,12 +8,12 @@
 	<link rel="icon" type="image/x-icon" href="./images/macaco-icon.png" sizes="32x32">
 </head>
 <body class="fundo">
-	<div class="cabecario">
+	<div class="cabecario" id="cabecario">
 		<img src="../images/macaco2.png" class="logo">
-		<h1 class="titulo">Macakins Games</h1>		
+		<h1 class="titulo" id="titulo">Macakins Games</h1>			
 	</div>
 
-	<div class="container-jogo">
+	<div class="container-jogo" id="container-jogo">
 		<h1 class="subtitulo" id="teste">Tiro ao Alvo</h1>
 		<canvas width="400" height="400" class="canvas-jogo" id="gameCanvas"></canvas>
 		<br>
@@ -21,9 +21,10 @@
 		<script type="text/javascript" src="../scripts/alvo.js"></script>
 	</div>
 
-	<div class="volta">
-		<a href="../index.html" class="link-volta"><p>Voltar</p></a>
+	<div class="volta" id="volta">
+		<a href="../index.html" class="link-volta" id="link-volta"><p>Voltar</p></a>
 	</div>
-	<script type="text/javascript" src="../scripts/bloqrolagem.js"></script>
+	<script src="../scripts/muda.js"></script>
+	<script src="../scripts/bloqrolagem.js"></script>
 </body>
 </html>

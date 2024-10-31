@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz Impossivel</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" type="image/x-icon" href="./images/macaco-icon.png" sizes="32x32">
+</head>
+<body class="fundo">
+	<div class="cabecario">
+		<img src="../images/macaco2.png" class="logo">
+		<h1 class="titulo">Macakins Games</h1>	
+	</div>
+
+	<div class="container-jogo">
+		<h1 class="subtitulo">Quiz impossivel</h1>
+        <div id="question-container">
+            <h2 id="question">Pergunta vai aqui</h2>
+            <div id="answer-buttons" class="btn-container">
+            </div>
+        </div>
+        <div id="end-quiz-container" class="hidden">
+            <h2 class="subtitulo">Você terminou o quiz!</h2>
+            <img src="../images/trofeu.png" class="trofeu">
+        </div>
+        <div id="game-over-container" class="hidden">
+            <h2 class="subtitulo">Game Over!</h2>
+            <p class="subtitulo">Você errou! Tente novamente.</p>
+            <button id="restart-game-button">Recomeçar</button>
+        </div>
+		<script type="text/javascript" src="../scripts/imposivel.js"></script>
+	</div>
+
+	<div class="volta">
+		<a href="../index.html" class="link-volta"><p>Voltar</p></a>
+	</div>
+	<script type="text/javascript" src="../scripts/bloqrolagem.js"></script>
+	<script src="../scripts/muda.js"></script>
+</body>
+</html>
