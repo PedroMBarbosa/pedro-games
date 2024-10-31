@@ -148,7 +148,7 @@ const questions = [
         question: "Quanto é 2x3+5/2?",
         answers: [
             { text: "5,7", correct: false },
-            { text: "5,6" correct: false },
+            { text: "5,6", correct: false },
             { text: "5,4", correct: false },
             { text: "5,5", correct: true },
         ],
