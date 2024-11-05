@@ -2,7 +2,7 @@ const canvas = document.getElementById('tetris');
         const context = canvas.getContext('2d');
         context.scale(30, 30); // Escala o grid para blocos de 30x30
 
-        const pieces = 'ILJOTSZ';
+        const pieces = 'ILJOTSZCM';
         const colors = {
             T: 'purple',
             O: 'yellow',
@@ -10,7 +10,9 @@ const canvas = document.getElementById('tetris');
             J: 'blue',
             I: 'cyan',
             S: 'green',
-            Z: 'red'
+            Z: 'red',
+            C: 'white',
+            M: 'grey'
         };
 
         let score = 0;
@@ -61,6 +63,18 @@ const canvas = document.getElementById('tetris');
                         [1, 1, 0],
                         [0, 1, 1],
                         [0, 0, 0],
+                    ];
+                case 'C':
+                    return[
+                        [1, 1, 0],
+                        [1, 0, 0],
+                        [1, 1, 0],
+                    ];
+                case 'M':
+                    return[
+                        [0, 1, 0],
+                        [1, 1, 1],
+                        [0, 1, 0],
                     ];
             }
         }
