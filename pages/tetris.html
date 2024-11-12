@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Invaders</title>
+    <title>Tetris</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="./images/macaco-icon.png" sizes="32x32">
 </head>
 <body class="fundo">
-    <div class="cabecario">
-        <img src="../images/macaco2.png" class="logo">
-        <h1 class="titulo">Macakins Games</h1>      
-    </div>
-
+    
     <div class="container-jogo">
         <h1 class="subtitulo">Tetris</h1>
         <h2 class="subtitulo">Controles:</h2>
@@ -21,6 +17,7 @@
             <li class="subtitulo">Mover peça: Setas pra Esquerda e pra Direita</li>
         </ul>
         <h2 class="subtitulo" id="score">Pontuação: 0</h2>
+        <h2 id="highScore" class="subtitulo">Maior Pontuação: 0</h2>
 
         <canvas width="300" height="600" class="canvas-jogo" id="tetris"></canvas>
     </div>
